@@ -1,27 +1,20 @@
 import * as React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
+import Logo from '../components/ifcLogo'
 
 // styles
-/*const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}*/
-
-const test = {
-  backgroundColor: "orange"
+const pageStyles = {
+  backgroundColor: 'black',
+  color: 'white',
+  fontFamily: '-apple-system, Roboto, sans-serif, serif',
 }
 
 // markup
 const IndexPage = () => {
   return (
-    <main style={test}>
+    <main style={pageStyles}>
       <title>Home Page</title>
       <h1>Gatsby</h1>
-      <StaticImage 
-        alt='Infamous' 
-        src='../images/InfamousCrew_Transparent.png'
-      />
+      <Logo></Logo>
     </main>
   )
 }
