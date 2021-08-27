@@ -1,4 +1,5 @@
-import * as React from "react"
+import * as React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 
 // styles
 /*const pageStyles = {
@@ -7,12 +8,20 @@ import * as React from "react"
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }*/
 
+const test = {
+  backgroundColor: "orange"
+}
+
 // markup
 const IndexPage = () => {
   return (
-    <main>
+    <main style={test}>
       <title>Home Page</title>
       <h1>Gatsby</h1>
+      <StaticImage 
+        alt='Infamous' 
+        src='../images/InfamousCrew_Transparent.png'
+      />
     </main>
   )
 }
