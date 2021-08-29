@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Logo from '../components/ifcLogo'
+import Nav from '../components/nav'
 
 // styles
 const pageStyles = {
@@ -13,8 +13,10 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>Home Page</title>
-      <h1>Gatsby</h1>
-      <Logo></Logo>
+      <Nav></Nav>
+      <div>
+        <h1>Powerlifting Online Coaching</h1>
+      </div>
     </main>
   )
 }
