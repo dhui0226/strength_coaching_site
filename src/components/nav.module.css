@@ -1,10 +1,11 @@
 .navContainer {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
 }
 
 .navItem {
     color: white;
     text-decoration: none;
+    justify-self: center;
 }

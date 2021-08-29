@@ -12,7 +12,9 @@ const Nav = () => {
             <Link to='/' className={navItem}>Home</Link>
             <Link to='/coaching' className={navItem}>Coaching</Link>
             <Link to='/services' className={navItem}>Services</Link>
-            <Logo></Logo>
+            <Link to='/' className={navItem}>
+                <Logo></Logo>
+            </Link>
             <Link to='/about' className={navItem}>About</Link>
             <Link to='/team' className={navItem}>Team</Link>
             <Link to='/contact' className={navItem}>Contact</Link>
