@@ -2,46 +2,60 @@
     background-color: black;
     color: white;
     font-family: '-apple-system', Roboto, sans-serif, serif;
-  }
-  
-  .mission {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .headingStyles {
-    padding: 4rem;
-  }
-  
-  .paragraphStyles {
     margin: 0;
-    padding: .5rem;
-  }
-  
-  .quoteStyles {
-    padding: '.5rem'
-  }
-  
-  .btnContainer {
-    display: flex;
-    justify-content: center;
-    padding: 4rem;
-  }
-  
-  .btn {
-    font-size: 1.25rem;
-    background-color: black;
-    border: solid white;
-    color: white;
-    cursor: pointer;
+    padding: 0;
   }
 
-  .btn:hover {
-      background-color: white;
-      color: black;
-  }
-  
-  .btnText {
-    padding: .5rem;
-  }
+.imageContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.imageContainer > h1 {
+  position: absolute;
+  bottom: 12rem;
+  left: 26rem;
+  color: white;
+  border: solid white;
+  padding: 1rem;
+  font-size: 40px;
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraphStyles {
+  margin: 0;
+  padding: .5rem;
+}
+
+.quoteStyles {
+  padding-top: .5rem;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.btn {
+  font-size: 1.25rem;
+  background-color: black;
+  border: solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btnText {
+  padding: .5rem;
+}
