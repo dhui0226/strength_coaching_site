@@ -1,12 +1,11 @@
 import * as React from 'react'
-import Nav from '../components/nav'
+import Layout from '../components/layout'
 
 const ApplicationPage = () => {
     return (
-        <div>
-            <Nav></Nav>
-            <h1>Application Page</h1>
-        </div>
+        <Layout pageTitle='Application Page'>
+            <p>This is the About Page</p>
+        </Layout>
     )
 }
 
