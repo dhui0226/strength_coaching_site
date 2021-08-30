@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Nav from '../components/nav'
+import ApplicationPage from './application'
 import {
   pageStyles,
   mission,
@@ -26,7 +27,7 @@ const IndexPage = () => {
           height={600}
           width={2000}
         />
-        <p>Powerlifting Online Coaching</p>
+        <h1>Powerlifting Online Coaching</h1>
       </div>
 
       <div className={mission}>

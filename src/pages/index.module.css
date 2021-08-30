@@ -9,12 +9,18 @@
 .imageContainer {
   position: relative;
   width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-.imageContainer > p {
+.imageContainer > h1 {
   position: absolute;
   bottom: 12rem;
-  left: 38rem;
+  left: 26rem;
+  color: white;
+  border: solid white;
+  padding: 1rem;
+  font-size: 40px;
 }
 .mission {
   display: flex;
@@ -28,13 +34,13 @@
 }
 
 .quoteStyles {
-  padding: .5rem;
+  padding-top: .5rem;
 }
 
 .btnContainer {
   display: flex;
   justify-content: center;
-  padding: 4rem;
+  padding: 1rem 3rem 3rem 3rem;
 }
 
 .btn {
