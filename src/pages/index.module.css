@@ -5,51 +5,51 @@
     margin: 0;
     padding: 0;
   }
-  
-  .mission {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .imageContainer {
-    position: relative;
-  }
-  
-  .imageContainer > p {
-    position: absolute;
-    bottom: 6rem;
-    left: 4rem;
-  }
-  
-  .paragraphStyles {
-    margin: 0;
-    padding: .5rem;
-  }
-  
-  .quoteStyles {
-    padding: '.5rem'
-  }
-  
-  .btnContainer {
-    display: flex;
-    justify-content: center;
-    padding: 4rem;
-  }
-  
-  .btn {
-    font-size: 1.25rem;
-    background-color: black;
-    border: solid white;
-    color: white;
-    cursor: pointer;
-  }
+.imageContainer {
+  position: relative;
+  width: 100%;
+}
 
-  .btn:hover {
-      background-color: white;
-      color: black;
-  }
-  
-  .btnText {
-    padding: .5rem;
-  }
+.imageContainer > p {
+  position: absolute;
+  bottom: 6rem;
+  left: 4rem;
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraphStyles {
+  margin: 0;
+  padding: .5rem;
+}
+
+.quoteStyles {
+  padding: .5rem;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.btn {
+  font-size: 1.25rem;
+  background-color: black;
+  border: solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.btnText {
+  padding: .5rem;
+}

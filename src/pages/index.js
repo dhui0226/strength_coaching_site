@@ -23,7 +23,8 @@ const IndexPage = () => {
         <StaticImage
           alt='deadlift'
           src='../images/deadlift.jpeg'
-          
+          height={600}
+          width={2000}
         />
         <p>Powerlifting Online Coaching</p>
       </div>
