@@ -6,7 +6,12 @@ import {
     heading,
     formContainer,
     nameContainer,
-    form
+    form,
+    firstNameInput,
+    lastNameInput,
+    birthDateForm,
+    btnContainer,
+    btn
 } from './application.module.css'
 
 const ApplicationPage = () => {
@@ -30,20 +35,22 @@ const ApplicationPage = () => {
                         <label className={form}>
                             <span>First Name</span>
                             <input
+                            className={firstNameInput}
                             type='text'
                             value={firstName}
                             onChange={(event) => {setFirstName(event.target.value)}}></input>
                         </label>
                         <label className={form}>
                             <span>Last Name</span>
-                            <input></input>       
+                            <input 
+                            className={lastNameInput}></input>       
                         </label>
                     </div>
                     <label className={form}>
                         <span>Email Address</span>
                         <input></input>
                     </label>
-                    <div>
+                    <div className={birthDateForm}>
                         <label className={form}>
                             <span>MM</span>
                             <input></input>
@@ -90,10 +97,15 @@ const ApplicationPage = () => {
                 </div>
             </div>
 
-            <button
-            onClick={() => {
-                handleSubmit()
-            }}>Submit</button>
+            <div className={btnContainer}>
+                <button
+                className={btn}
+                onClick={() => {
+                    handleSubmit()
+                }}>
+                    <p>Submit</p>
+                </button>
+            </div>
         </Layout>
     )
 }

@@ -7,6 +7,15 @@
     text-align: center;
 }
 
+.heading > h1 {
+    padding-top: 2rem;
+    font-size: 40px;
+}
+
+.heading > p {
+    padding: 1.5rem 0 3rem 0;
+}
+
 .formContainer {
     grid-column-start: 2;
     display: flex;
@@ -16,12 +25,49 @@
 }
 
 .nameContainer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.firstNameInput {
+    grid-column-start: 1;
+}
+
+.lastNameInput {
+    grid-column-start: 2;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.birthDateForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.btn {
+    font-size: 1rem;
+    background-color: black;
+    border: solid white;
+    color: white;
+    cursor: pointer;
+    padding: 0 2rem 0 2rem;
+}
+
+.btn:Hover {
+    background-color: white;
+    color: black;
+}
+
+.btnText {
+
 }
