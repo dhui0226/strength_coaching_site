@@ -1,0 +1,32 @@
+.teamContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.teamItem {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.coachImage > h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 2rem;
+}
+
+.coachImage {
+    grid-row-start: 1;
+}
+
+.coachImage img {
+    padding: 1.5rem 0 3rem 0;
+}
+
+.coachInfo {
+    grid-row-start: 2;
+}
+
+.coachInfo > p {
+    line-height: 2rem;
+}
