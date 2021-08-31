@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Nav from './nav'
+import Footer from './footer'
 import { pageStyles } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -9,6 +10,7 @@ const Layout = ({ pageTitle, children }) => {
             <main>
                 <Nav></Nav>
                 {children}
+                <Footer></Footer>
             </main>
         </div>
     )

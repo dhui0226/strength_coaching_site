@@ -25,13 +25,12 @@ const ApplicationPage = () => {
         <Layout pageTitle='Application Page'>
             <div className={heading}>
                 <h1>APPLICATION</h1>
-                <p>Please fill out the section below, as honestly and completely as you can to give us more information on how we can work together.</p>
             </div>  
 
             <div className={pageContainer}>
                 <div className={formContainer}>
+                    <p>Please fill out the section below, as honestly and completely as you can to give us more information on how we can work together.</p>
                     <div className={nameContainer}>
-                        {/*<h3>Name *</h3>*/}
                         <label className={form}>
                             <span>First Name</span>
                             <input
