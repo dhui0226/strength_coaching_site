@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import {
   mission,
   imageContainer,
+  image,
   paragraphStyles,
   quoteStyles,
   btnContainer,
@@ -16,8 +17,9 @@ import {
 const IndexPage = () => {
   return (
       <Layout pageTitle='Home'>
-        <div className={imageContainer}>
+        <div className={imageContainer}>      
           <StaticImage
+            className={image}
             alt='deadlift'
             src='../images/deadlift.jpeg'
             height={600}

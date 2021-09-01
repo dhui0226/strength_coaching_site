@@ -1,0 +1,9 @@
+.aboutContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.aboutItem {
+    grid-column-start: 2;
+    line-height: 2rem;
+}
