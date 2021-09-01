@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 40px;
+}
+
+.coachingContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.medalPic {
+    grid-column-start: 1;
+}
+
+.teamPic {
+    grid-column-start: 3;
+}
+
+.coachingItem {
+    grid-column-start: 2;
+}
+
+.coachingItem > p {
+    padding: 5rem 3rem 0 3rem;
+    line-height: 2rem;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    padding: 6rem 3rem 3rem 3rem;
+}
+  
+.btn {
+    font-size: 1rem;
+    background-color: black;
+    border: solid white;
+    color: white;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+  
+.btnText {
+    padding: .5rem;
+}

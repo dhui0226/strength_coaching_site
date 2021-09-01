@@ -18,7 +18,9 @@ const TeamPage = () => {
                         <StaticImage 
                             alt='coach'
                             src='../images/coach.jpg'
+                            layout='fixed'
                             width={500}
+                            height={450}
                         />
                     </div>
                     <div className={coachInfo}>
