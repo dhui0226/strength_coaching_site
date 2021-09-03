@@ -31,21 +31,53 @@
 
 .firstNameInput {
     grid-column-start: 1;
+    margin-right: 5px;
+}
+
+.lastNameLabel {
+    margin-left: 5px;
 }
 
 .lastNameInput {
     grid-column-start: 2;
+    margin-left: 5px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 10px;
+}
+
+span {
+    padding-bottom: 2.5px;
 }
 
 .birthDateForm {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+}
+
+.dateInput {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.genderSelect {
+    width: 50px;
+}
+
+.smallerInput {
+    width: 50px;
+}
+
+.biggerInput {
+    height: 60px;
+}
+
+.description {
+    color: grey;
 }
 
 .btnContainer {
@@ -70,10 +102,7 @@
 
 @media (max-width: 460px) {
     .formContainer {
-        padding: 0 1rem 0 1rem;;
-    }
-
-    .form > input {
-        width: 320px;
+        padding: 0 1rem 0 1rem;
+        
     }
 }
