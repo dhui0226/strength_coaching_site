@@ -7,3 +7,14 @@
     grid-column-start: 2;
     line-height: 2rem;
 }
+
+@media (max-width: 460px) {
+    .aboutContainer {
+        display: flex;
+        text-align: center;
+    }
+
+    .aboutItem {
+        padding: 0 1rem 0 1rem;
+    }
+}
