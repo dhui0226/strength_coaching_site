@@ -48,3 +48,34 @@ h1 {
 .btnText {
     padding: .5rem;
 }
+
+@media (max-width: 460px) {
+    .coachingContainer {
+        display: grid;
+        grid-template-rows: repeat(3, .5fr);
+        padding: 0 1rem 0 1rem;
+    }
+
+    .medalPic {
+        grid-row-start: 1;
+        grid-column: 1 / span 3;
+    }
+
+    .teamPic {
+        grid-row-start: 3;
+        grid-column: 1 / span 3;
+    }
+
+    .coachingItem {
+        grid-row-start: 2;
+        grid-column: 1 / span 3;
+    }
+
+    .coachingItem > p {
+        padding: 2rem 3rem 0 3rem;
+    }
+
+    .btnContainer {
+        padding: 3rem 3rem 3rem 3rem;
+    }
+}
