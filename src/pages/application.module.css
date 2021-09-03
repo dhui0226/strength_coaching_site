@@ -55,8 +55,6 @@ span {
 }
 
 .birthDateForm {
-    /*display: grid;
-    grid-template-columns: repeat(3, 1fr);*/
     display: flex;
     flex-direction: row;
 }
@@ -105,12 +103,6 @@ span {
 @media (max-width: 460px) {
     .formContainer {
         padding: 0 1rem 0 1rem;
-        border: solid red;
-        max-width: 320px;
-    }
-
-    .form > input {
-        box-sizing: border-box;
-        border: solid blue;
+        
     }
 }
