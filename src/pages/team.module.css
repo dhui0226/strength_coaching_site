@@ -29,6 +29,10 @@
     grid-row-start: 2;
 }
 
+.coachInfo > h2 {
+    padding: 1rem 0 .5rem 0;
+}
+
 .coachInfo > p {
     line-height: 2rem;
 }

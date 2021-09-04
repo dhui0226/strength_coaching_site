@@ -5,6 +5,7 @@
 
 .heading {
     text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 .heading > h1 {
@@ -12,8 +13,8 @@
     font-size: 40px;
 }
 
-.heading > p {
-    padding: 1.5rem 0 3rem 0;
+.formContainer > p {
+    padding-bottom: 1.5rem;
 }
 
 .formContainer {
@@ -87,12 +88,16 @@ span {
 }
 
 .btn {
-    font-size: 1rem;
+    font-size: 1.25rem;
     background-color: black;
     border: solid white;
     color: white;
     cursor: pointer;
     padding: 0 2rem 0 2rem;
+}
+
+.btn > p {
+    padding: 1rem 0 1rem 0;
 }
 
 .btn:Hover {

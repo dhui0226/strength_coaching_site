@@ -8,6 +8,7 @@
 
 .footerContainer > a {
     padding: .5rem;
+    color: white;
 }
 
 .footerContainer > a:visited {
