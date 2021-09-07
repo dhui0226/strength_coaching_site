@@ -10,8 +10,6 @@ import {
     firstNameInput,
     lastNameLabel,
     lastNameInput,
-    birthDateForm,
-    dateInput,
     genderSelect,
     smallerInput,
     biggerInput,
@@ -24,9 +22,7 @@ const ApplicationPage = () => {
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
-    const [month, setMonth] = useState(0)
-    const [day, setDay] = useState(0)
-    const [year, setYear] = useState(0)
+    const [dob, setDOB] = useState(0)
     const [gender, setGender] = useState('Male')
     const [height, setHeight] = useState(0)
     const [weight, setWeight] = useState(0)
@@ -38,7 +34,7 @@ const ApplicationPage = () => {
     const genderList = ['Male', 'Female', 'Other']
 
     function handleSubmit() {
-        console.log('info stuff', firstName, lastName, email, month, day, year, gender, height, weight, detailsOne, detailsTwo, detailsThree, sbdMaxes)
+        console.log('info stuff', firstName, lastName, email, gender, height, weight, detailsOne, detailsTwo, detailsThree, sbdMaxes)
     }
 
     return (
@@ -76,32 +72,13 @@ const ApplicationPage = () => {
                         value={email}
                         onChange={(event) => {setEmail(event.target.value)}}></input>
                     </label>
-                    <div className={birthDateForm}>
-                        <label className={form}>
-                            <span>MM</span>
-                            <input 
-                            className={dateInput}
-                            type='number'
-                            value={month}
-                            onChange={(event) => {setMonth(event.target.value)}}></input>
-                        </label>               
-                        <label className={form}>
-                            <span>DD</span>
-                            <input 
-                            className={dateInput}
-                            type='number'
-                            value={day}
-                            onChange={(event) => {setDay(event.target.value)}}></input>
-                        </label>
-                        <label className={form}>
-                            <span>YYYY</span>
-                            <input 
-                            className={dateInput}
-                            type='number'
-                            value={year}
-                            onChange={(event) => {setYear(event.target.value)}}></input>
-                        </label>
-                    </div>
+                    <label className={form}>
+                        <span>Date of Birth</span>
+                        <input 
+                        type='date'
+                        value={dob}
+                        onChange={(event) => {setDOB(event.target.value)}}></input>
+                    </label>                            
                     <label className={form}>
                         <span>Gender</span>
                         <select 
@@ -132,7 +109,7 @@ const ApplicationPage = () => {
                         <span>Years Training / Athletic Background</span>
                         <input 
                         className={biggerInput}
-                        type='message'
+                        type='text'
                         value={detailsOne}
                         onChange={(event) => {setDetailsOne(event.target.value)}}></input>
                     </label>
@@ -141,7 +118,7 @@ const ApplicationPage = () => {
                         <span className={description}>How often are you performing the Squat,Bench Press, and deadlift and its variations during a training week?</span>
                         <input 
                         className={biggerInput}
-                        type='message'
+                        type='text'
                         value={detailsTwo}
                         onChange={(event) => {setDetailsTwo(event.target.value)}}></input>
                     </label>
@@ -150,7 +127,7 @@ const ApplicationPage = () => {
                         If so, please leave details below</span>
                         <input 
                         className={biggerInput}
-                        type='message'
+                        type='text'
                         value={detailsThree}
                         onChange={(event) => {setDetailsThree(event.target.value)}}></input>
                     </label>
@@ -158,7 +135,7 @@ const ApplicationPage = () => {
                         <span>Current 1 Rep Max in S/B/D</span>
                         <input 
                         className={biggerInput}
-                        type='message'
+                        type='text'
                         value={sbdMaxes}
                         onChange={(event) => {setSbdMaxes(event.target.value)}}></input>
                     </label>

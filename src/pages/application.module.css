@@ -55,16 +55,6 @@ span {
     padding-bottom: 2.5px;
 }
 
-.birthDateForm {
-    display: flex;
-    flex-direction: row;
-}
-
-.dateInput {
-    width: 30px;
-    margin-right: 10px;
-}
-
 .genderSelect {
     width: 50px;
 }
