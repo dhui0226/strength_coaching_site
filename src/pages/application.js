@@ -34,7 +34,7 @@ const ApplicationPage = () => {
     const genderList = ['Male', 'Female', 'Other']
 
     function handleSubmit() {
-        console.log('info stuff', firstName, lastName, email, gender, height, weight, detailsOne, detailsTwo, detailsThree, sbdMaxes)
+        console.log('info stuff', firstName, lastName, email, dob, gender, height, weight, detailsOne, detailsTwo, detailsThree, sbdMaxes)
     }
 
     return (
@@ -145,6 +145,7 @@ const ApplicationPage = () => {
             <div className={btnContainer}>
                 <button
                 className={btn}
+                type='submit'
                 onClick={() => {
                     handleSubmit()
                 }}>
