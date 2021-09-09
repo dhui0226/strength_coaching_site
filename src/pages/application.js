@@ -77,7 +77,7 @@ const ApplicationPage = () => {
                         <input 
                         className={smallerInput}
                         name='height'
-                        type='number'
+                        type='text'
                         ></input>
                     </label>
                     <label className={form}>
@@ -90,37 +90,45 @@ const ApplicationPage = () => {
                     </label>
                     <label className={form}>
                         <span>Years Training / Athletic Background</span>
-                        <input 
+                        <textarea 
                         className={biggerInput}
                         name='trainingBackground'
                         type='text'
-                        ></input>
+                        rows='4'
+                        cols='50'
+                        ></textarea>
                     </label>
                     <label className={form}>
                         <span>Weekly Frequency</span>
                         <span className={description}>How often are you performing the Squat,Bench Press, and deadlift and its variations during a training week?</span>
-                        <input 
+                        <textarea 
                         className={biggerInput}
                         name='weeklyFrequency'
                         type='text'
-                        ></input>
+                        rows='4'
+                        cols='50'
+                        ></textarea>
                     </label>
                     <label className={form}>
                         <span>Are you prepping for a meet?
                         If so, please leave details below</span>
-                        <input 
+                        <textarea 
                         className={biggerInput}
                         name='meetPrep'
                         type='text'
-                        ></input>
+                        rows='4'
+                        cols='50'
+                        ></textarea>
                     </label>
                     <label className={form}>
                         <span>Current 1 Rep Max in S/B/D</span>
-                        <input 
+                        <textarea 
                         className={biggerInput}
                         name='sbdMaxes'
                         type='text'
-                        ></input>
+                        rows='4'
+                        cols='50'
+                        ></textarea>
                     </label>
                     <div className={btnContainer}>
                         <button
