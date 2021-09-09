@@ -19,7 +19,7 @@ import {
 } from './application.module.css'
 
 const ApplicationPage = () => {
-    const [firstName, setFirstName] = useState('')
+    /*const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [dob, setDOB] = useState(0)
@@ -29,13 +29,13 @@ const ApplicationPage = () => {
     const [detailsOne, setDetailsOne] = useState('')
     const [detailsTwo, setDetailsTwo] = useState('')
     const [detailsThree, setDetailsThree] = useState('')
-    const [sbdMaxes, setSbdMaxes] = useState('')
+    const [sbdMaxes, setSbdMaxes] = useState('')*/
 
     const genderList = ['Male', 'Female', 'Other']
 
-    function handleSubmit() {
+    /*function handleSubmit() {
         console.log('info stuff', firstName, lastName, email, dob, gender, height, weight, detailsOne, detailsTwo, detailsThree, sbdMaxes)
-    }
+    }*/
 
     return (
         <Layout pageTitle='Application Page'>
@@ -54,8 +54,8 @@ const ApplicationPage = () => {
                             className={firstNameInput}
                             name='firstName'
                             type='text'
-                            value={firstName}
-                            onChange={(event) => {setFirstName(event.target.value)}}></input>
+                            /*value={firstName}
+                            onChange={(event) => {setFirstName(event.target.value)}}*/></input>
                         </label>
                         <label className={form}>
                             <span className={lastNameLabel}>Last Name</span>
@@ -63,8 +63,8 @@ const ApplicationPage = () => {
                             className={lastNameInput}
                             name='lastName'
                             type='text'
-                            value={lastName}
-                            onChange={(event) => {setLastName(event.target.value)}}></input>       
+                            /*value={lastName}
+                            onChange={(event) => {setLastName(event.target.value)}}*/></input>       
                         </label>
                     </div>
                     <label className={form}>
@@ -72,25 +72,25 @@ const ApplicationPage = () => {
                         <input 
                         name='email'
                         type='email'
-                        value={email}
-                        onChange={(event) => {setEmail(event.target.value)}}></input>
+                        /*value={email}
+                        onChange={(event) => {setEmail(event.target.value)}}*/></input>
                     </label>
                     <label className={form}>
                         <span>Date of Birth</span>
                         <input 
                         name='dob'
                         type='date'
-                        value={dob}
-                        onChange={(event) => {setDOB(event.target.value)}}></input>
+                        /*value={dob}
+                        onChange={(event) => {setDOB(event.target.value)}}*/></input>
                     </label>                            
                     <label className={form}>
                         <span>Gender</span>
                         <select 
                         className={genderSelect} 
                         name='gender'
-                        onChange={(event) => {setGender(event.target.value)}}>
+                        /*onChange={(event) => {setGender(event.target.value)}}*/>
                             {genderList.map((selectedGender) => 
-                                <option value={selectedGender} key={selectedGender}>{selectedGender}</option>
+                                <option /*value={selectedGender}*/ key={selectedGender}>{selectedGender}</option>
                             )}
                         </select>
                     </label>
@@ -100,8 +100,8 @@ const ApplicationPage = () => {
                         className={smallerInput}
                         name='height'
                         type='number'
-                        value={height}
-                        onChange={(event) => {setHeight(event.target.value)}}></input>
+                        /*value={height}
+                        onChange={(event) => {setHeight(event.target.value)}}*/></input>
                     </label>
                     <label className={form}>
                         <span>Weight</span>
@@ -109,37 +109,37 @@ const ApplicationPage = () => {
                         className={smallerInput}
                         name='weight'
                         type='number'
-                        value={weight}
-                        onChange={(event) => {setWeight(event.target.value)}}></input>
+                        /*value={weight}
+                        onChange={(event) => {setWeight(event.target.value)}}*/></input>
                     </label>
                     <label className={form}>
                         <span>Years Training / Athletic Background</span>
                         <input 
                         className={biggerInput}
-                        name='detailsOne'
+                        name='trainingBackground'
                         type='text'
-                        value={detailsOne}
-                        onChange={(event) => {setDetailsOne(event.target.value)}}></input>
+                        /*value={detailsOne}
+                        onChange={(event) => {setDetailsOne(event.target.value)}}*/></input>
                     </label>
                     <label className={form}>
                         <span>Weekly Frequency</span>
                         <span className={description}>How often are you performing the Squat,Bench Press, and deadlift and its variations during a training week?</span>
                         <input 
                         className={biggerInput}
-                        name='detailsTwo'
+                        name='weeklyFrequency'
                         type='text'
-                        value={detailsTwo}
-                        onChange={(event) => {setDetailsTwo(event.target.value)}}></input>
+                        /*value={detailsTwo}
+                        onChange={(event) => {setDetailsTwo(event.target.value)}}*/></input>
                     </label>
                     <label className={form}>
                         <span>Are you prepping for a meet?
                         If so, please leave details below</span>
                         <input 
                         className={biggerInput}
-                        name='detailsThree'
+                        name='meetPrep'
                         type='text'
-                        value={detailsThree}
-                        onChange={(event) => {setDetailsThree(event.target.value)}}></input>
+                        /*value={detailsThree}
+                        onChange={(event) => {setDetailsThree(event.target.value)}}*/></input>
                     </label>
                     <label className={form}>
                         <span>Current 1 Rep Max in S/B/D</span>
@@ -147,16 +147,16 @@ const ApplicationPage = () => {
                         className={biggerInput}
                         name='sbdMaxes'
                         type='text'
-                        value={sbdMaxes}
-                        onChange={(event) => {setSbdMaxes(event.target.value)}}></input>
+                        /*value={sbdMaxes}
+                        onChange={(event) => {setSbdMaxes(event.target.value)}}*/></input>
                     </label>
                     <div className={btnContainer}>
                         <button
                         className={btn}
                         type='submit'
-                        onClick={() => {
+                        /*onClick={() => {
                             handleSubmit()
-                        }}>
+                        }}*/>
                             <p>Submit</p>
                         </button>
                     </div>
