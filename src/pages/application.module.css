@@ -22,7 +22,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 .nameContainer {
@@ -95,7 +94,7 @@ span {
     color: black;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 475px) {
     .formContainer {
         padding: 0 1rem 0 1rem; 
     }

@@ -10,12 +10,12 @@ import {
     btnContainer,
     btn,
     btnText
-} from './coaching.module.css'
+} from './services.module.css'
 
-const CoachingPage = () => {
+const ServicesPage = () => {
     return (
-        <Layout>
-            <h1>Coaching</h1>
+        <Layout pageTitle='Services'>
+            <h1>Services</h1>
             <div className={coachingContainer}>
                 <StaticImage 
                     className={medalPic}
@@ -43,4 +43,4 @@ const CoachingPage = () => {
     )
 }
 
-export default CoachingPage
+export default ServicesPage

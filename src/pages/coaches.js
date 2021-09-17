@@ -6,15 +6,15 @@ import {
     teamItem,
     coachImage,
     coachInfo
-} from './team.module.css'
+} from './coaches.module.css'
 
-const TeamPage = () => {
+const CoachesPage = () => {
     return (
-        <Layout pageTitle='Team Page'>
+        <Layout pageTitle='Coaches'>
             <div className={teamContainer}>
                 <div className={teamItem}>
                     <div className={coachImage}>
-                        <h1>Our Team</h1>
+                        <h1>Coaches</h1>
                         <StaticImage 
                             alt='coach'
                             src='../images/coach.jpg'
@@ -33,4 +33,4 @@ const TeamPage = () => {
     )
 }
 
-export default TeamPage
+export default CoachesPage

@@ -21,7 +21,7 @@ const ApplicationPage = () => {
     const genderList = ['Male', 'Female', 'Other']
 
     return (
-        <Layout pageTitle='Application Page'>
+        <Layout pageTitle='Application'>
             <div className={heading}>
                 <h1>APPLICATION</h1>
             </div>  

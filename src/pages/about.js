@@ -7,7 +7,7 @@ import {
 
 const AboutPage = () => {
     return (
-        <Layout>
+        <Layout pageTitle='About'>
             <div className={aboutContainer}>
                 <div className={aboutItem}>
                     <h1>About</h1>
