@@ -21,7 +21,7 @@
     max-height: 100%;
 }
 
-.coachImage img {
+.coachImage > img {
     padding: 1.5rem 0 3rem 0;
 }
 
@@ -35,6 +35,18 @@
 
 .coachInfo > p {
     line-height: 2rem;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .teamItem {
+        grid-template-rows: .125fr .125fr;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 768px) {
+    .teamItem {
+        grid-template-rows: .25fr .25fr;
+    }
 }
 
 @media (max-width: 460px) {
